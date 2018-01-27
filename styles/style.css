@@ -1,9 +1,230 @@
-header {
-  width: 100%;
-  background: blue; }
-
 body {
-  background: green; }
+  max-width: 1280px;
+  margin: 0; }
+
+.wrapper {
+  padding-left: 220px;
+  padding-right: 220px; }
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 100px; }
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+header nav {
+  width: 44%; }
+
+header nav {
+  width: 44%; }
+
+header img {
+  width: 120px; }
+
+header .headerNavigation {
+  width: 28%; }
+
+.landingGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 820px;
+  padding-top: 295px; }
+
+.landingGallery h2 {
+  margin-bottom: 30px; }
+
+.landingGallery h1 {
+  margin-bottom: 187px; }
+
+.landingGallery a {
+  margin-bottom: 231px; }
+
+.landingGallery button {
+  margin-bottom: 40px; }
+
+.companyInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 113px; }
+
+.companyInfo h2 {
+  margin-bottom: 20px; }
+
+.companyInfo h1 {
+  margin-bottom: 82px; }
+
+.companyInfo p {
+  margin-bottom: 134px; }
+
+.siteDeveloper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 96px; }
+
+.allProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 550px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.airPlants {
+  width: 40.17%; }
+
+.rightOfAir {
+  width: 57.26%; }
+
+.topOfContainers {
+  min-height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 30px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.officePlants,
+.housePlants {
+  width: 47.76; }
+
+.plantContainers {
+  min-height: 260px; }
+
+.popularProductsIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 101px;
+  padding-bottom: 51px; }
+
+.popularProductsIntro h2 {
+  margin-bottom: 74px; }
+
+.popularProductsGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 98px; }
+
+.popularProductsGallery > div {
+  width: 17.94%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 15px; }
+
+.popularProductsGallery > div > p {
+  margin-bottom: 16px; }
+
+.popularProductsGallery h3 {
+  margin-bottom: 48px; }
+
+.midPageBreak {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 620px;
+  width: 100%; }
+
+.midPageBreak .customerReviews,
+.midPageBreak .promoVideo {
+  width: 50%; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
 
 body {
   background: red; }

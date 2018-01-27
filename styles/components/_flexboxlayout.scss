@@ -1,0 +1,195 @@
+body {
+    max-width: 1280px;
+    margin: 0;
+}
+
+.wrapper {
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+header .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav {
+    width: 44%
+}
+
+header nav {
+    width: 44%;
+}
+
+header img {
+    width: 120px;
+}
+
+header .headerNavigation {
+    width: 28%;
+}
+
+.landingGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 820px;
+    padding-top: 295px;
+}
+
+.landingGallery h2 {
+    margin-bottom: 30px;
+}
+
+.landingGallery h1 {
+    margin-bottom: 187px;
+}
+
+.landingGallery a {
+    margin-bottom: 231px;
+}
+.landingGallery button {
+    margin-bottom: 40px;
+}
+
+.companyInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 113px;
+}
+
+.companyInfo h2 {
+    margin-bottom: 20px;
+}
+
+.companyInfo h1 {
+    margin-bottom: 82px;
+}
+
+.companyInfo p {
+    margin-bottom: 134px;
+}
+
+.siteDeveloper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 96px;
+}
+
+.allProducts {
+    display: flex;
+    flex-direction: row;
+    min-height: 550px;
+    justify-content: space-between
+}
+
+.airPlants {
+    width: 40.17%;
+}
+
+.rightOfAir {
+    width: 57.26%;
+}
+
+.topOfContainers {
+    min-height: 260px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.officePlants,
+.housePlants {
+    width: 47.76;
+}
+
+.plantContainers {
+    min-height: 260px;
+}
+
+.popularProductsIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 101px;
+    padding-bottom: 51px;
+}
+
+.popularProductsIntro h2 {
+    margin-bottom: 74px;
+}
+
+.popularProductsGallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 98px;
+}
+
+.popularProductsGallery>div {
+    width: 17.94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    margin-bottom: 15px;
+}
+
+.popularProductsGallery>div>p {
+    margin-bottom: 16px;
+}
+
+.popularProductsGallery h3 {
+    margin-bottom: 48px;
+}
+
+.midPageBreak{
+    display: flex;
+    flex-direction: row;
+    min-height: 620px;
+    width: 100%;
+}
+
+.midPageBreak .customerReviews,
+.midPageBreak .promoVideo {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
