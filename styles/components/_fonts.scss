@@ -2,6 +2,149 @@ ul {
     list-style: none;
 }
 a {
-    color: black;
+    color: #1a1a26;
     text-decoration: none;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+header a {
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.landingGallery h2 {
+    font-size: 2rem;
+    color: #888890;
+    font-weight: 300;
+}
+
+.landingGallery h1 {
+    font-size: 3.75rem;
+    color: #1d1d29;
+    font-weight: 500;
+}
+
+.landingGallery a {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.companyInfo h2 {
+    font-size: .8rem;
+    color: #a8edea;
+    font-weight: 400;
+}
+
+.companyInfo h1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.companyInfo p {
+    font-size: .875rem;
+    font-weight: 400;
+    color: #888890;
+}
+
+.siteDeveloper h4:nth-of-type(1) {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1e1e2a;
+}
+
+.siteDeveloper h4:nth-of-type(2) {
+    font-size: .875rem;
+    font-weight: 400;
+    color: #888890;
+    align-self: middle;
+}
+
+.content h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.content p {
+    font-size: .75rem;
+    font-weight: 400;
+    color: #888890;
+}
+
+.popularProductsIntro h2 {
+    font-size:2.25rem;
+    font-weight: 400;
+}
+
+.popularButtons button {
+    border: none;
+    background: none;
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.productTags p {
+    font-size: .625rem;
+    color: #FFFFFF;
+}
+
+.productWrapper>p {
+    font-size: .875rem;
+}
+
+.productWrapper>h3,
+.productWrapper h3:nth-of-type(1) {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.productWrapper h3:nth-of-type(2) {
+    font-size: .8125rem;
+    color: #888890;
+    text-decoration-line: line-through;
+    font-weight: 500;
+}
+
+.ourBlog h2 {
+    font-size: 2.125rem;
+    font-weight: 500;
+}
+
+.date {
+    font-size: .8125rem;
+    font-weight: 400;
+    color: #888890;
+}
+
+.expand {
+    font-size: .6875rem;
+}
+
+.newsletter h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.newsletter p {
+    font-size: .8125rem;
+    color: #888890;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.contactInfo p,
+.servicesNavigation a,
+.accountNavigation a {
+    font-size: .8125rem;
+    font-weight: 400;
+    color: #888890;
+}
+
+
+    

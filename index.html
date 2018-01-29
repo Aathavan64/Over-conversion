@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/86a229780d.js"></script>
 </head>
 <body>
-    <Header>
+    <header>
         <div class="wrapper">
             <nav>
                 <ul>
@@ -19,14 +21,16 @@
                     <li><a href="#?">Blog</a></li>
                 </ul>
             </nav>
-            <img class headerLogo src="" alt="">
+            <div class="headerLogo">
+                <img src="images/headerLogo.jpg" alt="">
+            </div>
             <div class="headerNavigation">
-                <i>Formicon</i>
-                <i>search icon</i>
-                <i>ham menu</i>
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
         </div> 
-    </Header>
+    </header>
     <main>
         <section class="landingGallery">
             <h2>Over Collections 2017</h2>
@@ -83,7 +87,7 @@
                 </div>
             </div>
             <section class="popularProductsGallery">
-                <div>
+                <div class="productWrapper" >
                     <div class="product">
                         <div class="productTags">
                             <p class="hotTag">hot</p>
@@ -94,7 +98,7 @@
                     <p>Pebbled backpack</p>
                     <h3>$99.00</h3>
                 </div>
-                <div>
+                <div class="productWrapper" >
                     <div class="product">
                         <div class="productTags">
                             <p class="newTag">new</p>
@@ -104,7 +108,7 @@
                     <p>Flower print dress</p>
                     <h3>$52.00</h3>
                 </div>
-                <div>
+                <div class="productWrapper">
                     <div class="product">
                         <div class="productTags">
                             <p class="discountTag">-20%</p>
@@ -117,14 +121,14 @@
                         <h3>$79.00</h3>
                     </div>
                 </div>
-                <div>
+                <div class="productWrapper">
                     <div class="product">
                         <a href=#?>Add to Cart</a>
                     </div>
                     <p>Slim-fit cotton T-shirt</p>
                     <h3>$77.00</h3>
                 </div>
-                <div>
+                <div class="productWrapper">
                     <div class="product">
                         <div class="productTags">
                             <p class="discountTag">-20%</p>
@@ -137,14 +141,14 @@
                         <h3>$199.00</h3>
                     </div>
                 </div>
-                <div>
+                <div class="productWrapper">
                     <div class="product">
                         <a href=#?>Add to Cart</a>
                     </div>
                     <p>Flower Print Dress</p>
                     <h3>$98.00</h3>
                 </div>
-                <div>
+                <div class="productWrapper">
                     <div class="product">
                         <div class="productTags">
                             <p class="hotTag">hot</p>
@@ -154,7 +158,7 @@
                     <p>Combined weekend bag</p>
                     <h3>$88.00</h3>
                 </div>
-                <div>
+                <div class="productWrapper">
                     <div class="product">
                         <div class="productTags">
                             <p class="discountTag">-20%</p>
@@ -167,14 +171,14 @@
                         <h3>79.00</h3>
                     </div>
                 </div>
-                <div>
+                <div class="productWrapper">
                     <div class="product">
                         <a href=#?>Add to Cart</a>
                     </div>
                     <p>Slim-fit Patrick jeans</p>
                     <h3>$88.00</h3>
                 </div>
-                <div>
+                <div class="productWrapper">
                     <div class="product">
                         <a href=#?>Add to Cart</a>
                     </div>
@@ -190,6 +194,7 @@
             <div class="customerReviews">
                 <h2>What Are Our Customers Saying?</h2>
                 <div class="review">
+                    <h3>"</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nemo fuga, magni pariatur fugit quia!</p>
                     <p class="customerAuthor">Rosinante Brook. Web Design</p>
                 </div>
@@ -202,27 +207,23 @@
             </div>
         </div>
         <div class="wrapper">
-            <section class="ourblog">
+            <section class="ourBlog">
                 <h2>From Our Blog</h2>
                 <div class="blogPosts">
                     <div class="post">
-                        <img src="#?" alt="">
+                        <img src="images/blogFlowers.jpg" alt="">
                         <h3 class="date">December 14, 2017</h3>
                         <h3 class="title">How To Wear Fishnets Like a Street Style Superstar</h3>
                         <div class="exand">Read More</div>
                     </div>
-                </div>
-                <div class="blogPosts">
                     <div class="post">
-                        <img src="#?" alt="">
-                        <h3 class="date"></h3>
+                        <img src="images/blogFlowers.jpg" alt="">
+                        <h3 class="date"> December 14, 2017</h3>
                         <h3 class="title">How To Wear Fishnets Like a Street Style Superstar</h3>
                         <div class="exand">Read More</div>
                     </div>
-                </div>
-                <div class="blogPosts">
                     <div class="post">
-                        <img src="#?" alt="">
+                        <img src="images/blogFlowers.jpg" alt="">
                         <h3 class="date">December 14, 2017</h3>
                         <h3 class="title">How To Wear Fishnets Like a Street Style Superstar</h3>
                         <div class="exand">Read More</div>
@@ -238,11 +239,11 @@
                 </div>
             </section>
             <section class="ourSponsors">
-                <a href="#?" class="authentic"></a>
-                <a href="#?" class="drewville"></a>
-                <a href="#?" class="sears"></a>
-                <a href="#?" class="yourkshire"></a>
-                <a href="#?" class="luigiano"></a>
+                <a href="#?" class="authentic sponsor"></a>
+                <a href="#?" class="drewville sponsor"></a>
+                <a href="#?" class="sears sponsor"></a>
+                <a href="#?" class="yourkshire sponsor"></a>
+                <a href="#?" class="luigiano sponsor"></a>
             </section>
         </div>
     </main>
@@ -250,7 +251,7 @@
         <div class="wrapper">
             <section class="contactInfo">
                 <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur natus impedit minus voluptatibus accusamus ut illum eum fugit odit hic.</p>
+                <p class="mainInfo" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur natus impedit minus voluptatibus accusamus ut illum eum fugit odit hic.</p>
                 <div class="address">
                     <h3>Address</h3>
                     <p>: 451 Fifth Avenue, 36th New York, NY 1011829</p>

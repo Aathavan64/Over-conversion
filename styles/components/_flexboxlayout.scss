@@ -1,11 +1,23 @@
+h1, h2, h3, h4, p, ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
 body {
     max-width: 1280px;
     margin: 0;
 }
 
 .wrapper {
-    padding-left: 220px;
-    padding-right: 220px;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 header .wrapper {
@@ -15,33 +27,51 @@ header .wrapper {
     min-height: 100px;
 }
 
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 header ul {
     display: flex;
     flex-direction: row;
 }
 
-header nav {
-    width: 44%
+header ul li {
+    margin-right: 39px;
 }
 
 header nav {
-    width: 44%;
+    width: 43%
 }
 
-header img {
+header .headerLogo {
     width: 120px;
+    display: flex;
+    align-items: center;    
 }
 
 header .headerNavigation {
-    width: 28%;
+    width: 43%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fa-shopping-bag,
+.fa-search {
+    margin-right: 30px;
 }
 
 .landingGallery {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 820px;
     padding-top: 295px;
+    background: url('../images/flowers.jpg');
+    background-repeat: no-repeat;
 }
 
 .landingGallery h2 {
@@ -49,11 +79,14 @@ header .headerNavigation {
 }
 
 .landingGallery h1 {
-    margin-bottom: 187px;
+    margin-bottom: 64px;
 }
 
 .landingGallery a {
     margin-bottom: 231px;
+    padding: 25px 44px;
+    color: #FFFFFF;
+    background-color: #f07f84;
 }
 .landingGallery button {
     margin-bottom: 40px;
@@ -109,7 +142,7 @@ header .headerNavigation {
 
 .officePlants,
 .housePlants {
-    width: 47.76;
+    width: 47.76%;
 }
 
 .plantContainers {
@@ -124,8 +157,43 @@ header .headerNavigation {
     padding-bottom: 51px;
 }
 
+.productCategory {
+    display: flex;
+}
+
+.content {
+    margin: auto;
+    background: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.airPlants {
+    background: url("../images/cactus.jpg");
+}
+
+.officePlants {
+    background: url("../images/hangingPlant.jpg")
+}
+
+.housePlants {
+    background: url("../images/glassPlant.jpg")
+}
+
+.plantContainers {
+    background: url("../images/2plants.jpg")
+}
+
 .popularProductsIntro h2 {
     margin-bottom: 74px;
+}
+
+.popularButtons {
+    width: 33.58%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .popularProductsGallery {
@@ -149,6 +217,47 @@ header .headerNavigation {
     align-items: flex-end;
     align-self: flex-end;
     margin-bottom: 15px;
+    background: url('../images/aloe.jpg');
+    min-height: 270px;
+    width: 100%;
+    position: relative
+}
+
+.product a {
+    position: absolute;
+    align-self: center;
+}
+
+.productTags {
+    padding-top: 10px;
+}
+
+.productTags p {
+    padding: 3px 8px;
+    border-radius: 18px;
+    margin-bottom: 5px;
+}
+
+.hotTag {
+    background-color: #ff9a93;
+}
+
+.newTag {
+    background-color: #79dad6;
+}
+
+.discountTag {
+    background-color: #f6b895;
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.discount :nth-of-type(1) {
+    margin-right: 10px;
 }
 
 .popularProductsGallery>div>p {
@@ -162,14 +271,185 @@ header .headerNavigation {
 .midPageBreak{
     display: flex;
     flex-direction: row;
-    min-height: 620px;
-    width: 100%;
+    min-height: 620p;
 }
 
 .midPageBreak .customerReviews,
 .midPageBreak .promoVideo {
     width: 50%;
 }
+
+.midPageBreak .customerReviews {
+    padding-top: 138px;
+    padding-bottom: 138px;
+}
+
+.customerReviews h2 {
+    margin-bottom: 21px;
+}
+
+.review h3 {
+    margin-bottom: 30px;
+}
+
+.review p {
+    margin-bottom: 26px;
+}
+
+.ourBlog {
+    padding-bottom: 53px;
+}
+
+.ourBlog h2 {
+    text-align: center;
+    margin-bottom: 82px;
+}
+.blogPosts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post {
+    width: 31.62%
+}
+
+.post img {
+    margin-bottom: 20px;
+}
+
+.post .date {
+    margin-bottom: 18px;
+}
+
+.post .title {
+    margin-bottom: 25px;
+}
+
+.newsletter {
+    padding-top: 53px;
+    width: 71.88%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter h2{
+    margin-bottom: 63px;
+}
+
+.newsletter p {
+    margin-bottom: 72px;
+}
+
+.emailSubmission {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourSponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 108px;
+    padding-bottom: 108px;
+}
+
+.sponsor {
+    width: 11.53%;
+}
+
+.authentic {
+    background: url('../images/logo1.jpg');
+    min-height: 75px;
+    background-repeat: no-repeat;
+}
+
+.drewville {
+     background: url('../images/logo2.jpg');
+     background-repeat: no-repeat;
+}
+
+.sears {
+    background: url('../images/logo3.jpg');
+    background-repeat: no-repeat;
+}
+
+.yourkshire {
+    background: url('../images/logo4.jpg');
+    background-repeat: no-repeat;
+}
+
+.luigiano {
+    background: url('../images/logo5.jpg');
+    background-repeat: no-repeat;
+}
+
+footer a{
+    display: block;
+}
+
+footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: space-between;
+}
+
+.mainInfo {
+    margin-bottom: 50px;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.phone, 
+.email {
+    margin-bottom: 16px;
+}
+
+.skype {
+    margin-bottom: 46px;
+}
+
+.contactInfo img,
+footer h2 {
+    margin-bottom: 54px;
+    min-height: 28px;
+}
+
+.contactInfo {
+    width: 41%;
+}
+
+.servicesNavigation {
+    width: 14%;
+}
+
+.accountNavigation {
+    width: 14%;
+}
+
+.instagramNavigation {
+    width: 23%;
+}
+
+.address,
+.phone,
+.email,
+.skype {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 

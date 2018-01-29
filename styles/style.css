@@ -1,10 +1,19 @@
+h1, h2, h3, h4, p, ul {
+  margin: 0; }
+
+ul {
+  padding: 0; }
+
+img {
+  width: 100%; }
+
 body {
   max-width: 1280px;
   margin: 0; }
 
 .wrapper {
-  padding-left: 220px;
-  padding-right: 220px; }
+  padding-left: 55px;
+  padding-right: 55px; }
 
 header .wrapper {
   display: -webkit-box;
@@ -19,6 +28,18 @@ header .wrapper {
   justify-content: space-between;
   min-height: 100px; }
 
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,17 +49,40 @@ header ul {
   -ms-flex-direction: row;
   flex-direction: row; }
 
-header nav {
-  width: 44%; }
+header ul li {
+  margin-right: 39px; }
 
 header nav {
-  width: 44%; }
+  width: 43%; }
 
-header img {
-  width: 120px; }
+header .headerLogo {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 header .headerNavigation {
-  width: 28%; }
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.fa-shopping-bag,
+.fa-search {
+  margin-right: 30px; }
 
 .landingGallery {
   display: -webkit-box;
@@ -51,17 +95,21 @@ header .headerNavigation {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: 820px;
-  padding-top: 295px; }
+  padding-top: 295px;
+  background: url("../images/flowers.jpg");
+  background-repeat: no-repeat; }
 
 .landingGallery h2 {
   margin-bottom: 30px; }
 
 .landingGallery h1 {
-  margin-bottom: 187px; }
+  margin-bottom: 64px; }
 
 .landingGallery a {
-  margin-bottom: 231px; }
+  margin-bottom: 231px;
+  padding: 25px 44px;
+  color: #FFFFFF;
+  background-color: #f07f84; }
 
 .landingGallery button {
   margin-bottom: 40px; }
@@ -133,7 +181,7 @@ header .headerNavigation {
 
 .officePlants,
 .housePlants {
-  width: 47.76; }
+  width: 47.76%; }
 
 .plantContainers {
   min-height: 260px; }
@@ -152,8 +200,49 @@ header .headerNavigation {
   padding-top: 101px;
   padding-bottom: 51px; }
 
+.productCategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.content {
+  margin: auto;
+  background: #FFFFFF;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.airPlants {
+  background: url("../images/cactus.jpg"); }
+
+.officePlants {
+  background: url("../images/hangingPlant.jpg"); }
+
+.housePlants {
+  background: url("../images/glassPlant.jpg"); }
+
+.plantContainers {
+  background: url("../images/2plants.jpg"); }
+
 .popularProductsIntro h2 {
   margin-bottom: 74px; }
+
+.popularButtons {
+  width: 33.58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .popularProductsGallery {
   display: -webkit-box;
@@ -196,7 +285,47 @@ header .headerNavigation {
   align-items: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  background: url("../images/aloe.jpg");
+  min-height: 270px;
+  width: 100%;
+  position: relative; }
+
+.product a {
+  position: absolute;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.productTags {
+  padding-top: 10px; }
+
+.productTags p {
+  padding: 3px 8px;
+  border-radius: 18px;
+  margin-bottom: 5px; }
+
+.hotTag {
+  background-color: #ff9a93; }
+
+.newTag {
+  background-color: #79dad6; }
+
+.discountTag {
+  background-color: #f6b895; }
+
+.discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.discount :nth-of-type(1) {
+  margin-right: 10px; }
 
 .popularProductsGallery > div > p {
   margin-bottom: 16px; }
@@ -212,19 +341,288 @@ header .headerNavigation {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  min-height: 620px;
-  width: 100%; }
+  min-height: 620p; }
 
 .midPageBreak .customerReviews,
 .midPageBreak .promoVideo {
   width: 50%; }
 
+.midPageBreak .customerReviews {
+  padding-top: 138px;
+  padding-bottom: 138px; }
+
+.customerReviews h2 {
+  margin-bottom: 21px; }
+
+.review h3 {
+  margin-bottom: 30px; }
+
+.review p {
+  margin-bottom: 26px; }
+
+.ourBlog {
+  padding-bottom: 53px; }
+
+.ourBlog h2 {
+  text-align: center;
+  margin-bottom: 82px; }
+
+.blogPosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.post {
+  width: 31.62%; }
+
+.post img {
+  margin-bottom: 20px; }
+
+.post .date {
+  margin-bottom: 18px; }
+
+.post .title {
+  margin-bottom: 25px; }
+
+.newsletter {
+  padding-top: 53px;
+  width: 71.88%;
+  margin: 0 auto;
+  text-align: center; }
+
+.newsletter h2 {
+  margin-bottom: 63px; }
+
+.newsletter p {
+  margin-bottom: 72px; }
+
+.emailSubmission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.ourSponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 108px;
+  padding-bottom: 108px; }
+
+.sponsor {
+  width: 11.53%; }
+
+.authentic {
+  background: url("../images/logo1.jpg");
+  min-height: 75px;
+  background-repeat: no-repeat; }
+
+.drewville {
+  background: url("../images/logo2.jpg");
+  background-repeat: no-repeat; }
+
+.sears {
+  background: url("../images/logo3.jpg");
+  background-repeat: no-repeat; }
+
+.yourkshire {
+  background: url("../images/logo4.jpg");
+  background-repeat: no-repeat; }
+
+.luigiano {
+  background: url("../images/logo5.jpg");
+  background-repeat: no-repeat; }
+
+footer a {
+  display: block; }
+
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.mainInfo {
+  margin-bottom: 50px; }
+
+.address {
+  margin-bottom: 20px; }
+
+.phone,
+.email {
+  margin-bottom: 16px; }
+
+.skype {
+  margin-bottom: 46px; }
+
+.contactInfo img,
+footer h2 {
+  margin-bottom: 54px;
+  min-height: 28px; }
+
+.contactInfo {
+  width: 41%; }
+
+.servicesNavigation {
+  width: 14%; }
+
+.accountNavigation {
+  width: 14%; }
+
+.instagramNavigation {
+  width: 23%; }
+
+.address,
+.phone,
+.email,
+.skype {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 ul {
   list-style: none; }
 
 a {
-  color: black;
+  color: #1a1a26;
   text-decoration: none; }
 
 body {
-  background: red; }
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; }
+
+header a {
+  font-size: .75rem;
+  font-weight: 600; }
+
+.landingGallery h2 {
+  font-size: 2rem;
+  color: #888890;
+  font-weight: 300; }
+
+.landingGallery h1 {
+  font-size: 3.75rem;
+  color: #1d1d29;
+  font-weight: 500; }
+
+.landingGallery a {
+  font-size: 1rem;
+  font-weight: 400; }
+
+.companyInfo h2 {
+  font-size: .8rem;
+  color: #a8edea;
+  font-weight: 400; }
+
+.companyInfo h1 {
+  font-size: 1.75rem;
+  font-weight: 500; }
+
+.companyInfo p {
+  font-size: .875rem;
+  font-weight: 400;
+  color: #888890; }
+
+.siteDeveloper h4:nth-of-type(1) {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e1e2a; }
+
+.siteDeveloper h4:nth-of-type(2) {
+  font-size: .875rem;
+  font-weight: 400;
+  color: #888890;
+  -ms-flex-item-align: middle;
+  align-self: middle; }
+
+.content h2 {
+  font-size: 1.25rem;
+  font-weight: 400; }
+
+.content p {
+  font-size: .75rem;
+  font-weight: 400;
+  color: #888890; }
+
+.popularProductsIntro h2 {
+  font-size: 2.25rem;
+  font-weight: 400; }
+
+.popularButtons button {
+  border: none;
+  background: none;
+  font-size: .875rem;
+  font-weight: 500; }
+
+.productTags p {
+  font-size: .625rem;
+  color: #FFFFFF; }
+
+.productWrapper > p {
+  font-size: .875rem; }
+
+.productWrapper > h3,
+.productWrapper h3:nth-of-type(1) {
+  font-size: 1rem;
+  font-weight: 500; }
+
+.productWrapper h3:nth-of-type(2) {
+  font-size: .8125rem;
+  color: #888890;
+  -webkit-text-decoration-line: line-through;
+  text-decoration-line: line-through;
+  font-weight: 500; }
+
+.ourBlog h2 {
+  font-size: 2.125rem;
+  font-weight: 500; }
+
+.date {
+  font-size: .8125rem;
+  font-weight: 400;
+  color: #888890; }
+
+.expand {
+  font-size: .6875rem; }
+
+.newsletter h2 {
+  font-size: 2.25rem;
+  font-weight: 500; }
+
+.newsletter p {
+  font-size: .8125rem;
+  color: #888890; }
+
+footer h2 {
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+.contactInfo p,
+.servicesNavigation a,
+.accountNavigation a {
+  font-size: .8125rem;
+  font-weight: 400;
+  color: #888890; }
