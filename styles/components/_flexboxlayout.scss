@@ -1,4 +1,4 @@
-h1, h2, h3, h4, p, ul {
+h1, h2, h3, h4, p, ul, body {
     margin: 0;
 }
 
@@ -10,14 +10,14 @@ img {
     width: 100%;
 }
 
-body {
-    max-width: 1280px;
-    margin: 0;
-}
 
 .wrapper {
-    padding-left: 55px;
-    padding-right: 55px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.fullbleed {
+    max-width: 1980px;
 }
 
 header .wrapper {
@@ -72,6 +72,7 @@ header .headerNavigation {
     padding-top: 295px;
     background: url('../images/flowers.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .landingGallery h2 {
@@ -84,12 +85,27 @@ header .headerNavigation {
 
 .landingGallery a {
     margin-bottom: 231px;
-    padding: 25px 44px;
+    padding: 10px 40px;
     color: #FFFFFF;
     background-color: #f07f84;
+    text-transform: uppercase; 
 }
 .landingGallery button {
     margin-bottom: 40px;
+}
+
+.gallerySlider {
+    display: flex;
+    align-content: center;
+}
+
+.gallerySlider button {
+    height:10px;
+    height:10px;
+    border-radius: 50%;
+    background: black;
+    border: none;
+    margin-right: 10px;
 }
 
 .companyInfo {
@@ -105,6 +121,24 @@ header .headerNavigation {
 
 .companyInfo h1 {
     margin-bottom: 82px;
+}
+
+.introh1 {
+    position: relative;
+}
+
+.introh1 .h1back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: -1;
+}
+
+.h1back img {
+    margin: auto;
 }
 
 .companyInfo p {
@@ -171,7 +205,7 @@ header .headerNavigation {
 }
 
 .airPlants {
-    background: url("../images/cactus.jpg");
+    background: url("../images/airPlants.png");
 }
 
 .officePlants {
@@ -217,19 +251,84 @@ header .headerNavigation {
     align-items: flex-end;
     align-self: flex-end;
     margin-bottom: 15px;
-    background: url('../images/aloe.jpg');
     min-height: 270px;
     width: 100%;
     position: relative
 }
 
-.product a {
+.popular1 {
+    background: url('../images/popular1.jpg');
+}
+
+.popular2 {
+    background: url('../images/popular2.jpg');
+}
+
+.popular3 {
+    background: url('../images/popular3.jpg');
+}
+
+.popular4 {
+    background: url('../images/popular4.png');
+}
+
+.popular5 {
+    background: url('../images/popular5.png');
+}
+
+.popular6 {
+    background: url('../images/popular6.jpg');
+}
+
+.popular7 {
+    background: url('../images/popular7.png');
+}
+
+.popular8 {
+    background: url('../images/popular8.jpg');
+}
+
+.popular9 {
+    background: url('../images/popular9.jpg');
+}
+
+.popular10 {
+    background: url('../images/popular10.jpg');
+}
+
+.product .cart{
     position: absolute;
-    align-self: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: rgba(26, 26, 38, .5)
+}
+
+.product:hover .cart {
+    display: flex;
+}
+
+.popularButtons button {
+    padding: 0;
+    border-bottom: 2px solid red;
+}
+
+.popularButtons button:hover {
+    border-bottom: 2px solid #888890;
+}
+
+.cart a {
+    margin: auto;
+    padding: 10px 13px;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .productTags {
     padding-top: 10px;
+    padding-right: 10px;
 }
 
 .productTags p {
@@ -271,7 +370,7 @@ header .headerNavigation {
 .midPageBreak{
     display: flex;
     flex-direction: row;
-    min-height: 620p;
+    min-height: 620px;
 }
 
 .midPageBreak .customerReviews,
@@ -279,13 +378,52 @@ header .headerNavigation {
     width: 50%;
 }
 
-.midPageBreak .customerReviews {
-    padding-top: 138px;
-    padding-bottom: 138px;
+.customerReviews {
+    display: flex;
+    flex-direction: row;
+    background: url('../images/breakLeft.jpg');
 }
+.customerReviews .content {
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: none;
+}
+
+.promoVideo {
+    display: flex;
+    flex-direction: row;
+    background: url('../images/breakRight.jpg')
+}
+
+.promoVideo .content {
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background:none;
+}
+
+.plantsLogo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.review img {
+    width: 55px;
+    margin-bottom: 30px;
+}
+
+.playIcon {
+    width: 100px;
+    margin-bottom: 51px;
+} 
 
 .customerReviews h2 {
     margin-bottom: 21px;
+    text-align: center;
 }
 
 .review h3 {
@@ -298,6 +436,7 @@ header .headerNavigation {
 
 .ourBlog {
     padding-bottom: 53px;
+    padding-top: 100px;
 }
 
 .ourBlog h2 {
@@ -440,6 +579,29 @@ footer h2 {
 .skype {
     display: flex;
     align-items: center;
+}
+
+.instaPosts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.instaPosts img {
+    width: 84px;
+    margin-bottom: 8.5px;
+}
+
+.paymentMethods {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.paymentMethods img {
+    width: 35px;
 }
 
 
