@@ -79,6 +79,18 @@ header .headerNavigation {
   -ms-flex-align: center;
   align-items: center; }
 
+.fa-shopping-bag {
+  position: relative; }
+
+.fa-shopping-bag p {
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  background-color: #a8edea;
+  font-size: .5rem;
+  padding: 3px 5px;
+  border-radius: 50%; }
+
 .fa-shopping-bag,
 .fa-search {
   margin-right: 30px; }
@@ -167,7 +179,8 @@ header .headerNavigation {
   margin: auto; }
 
 .companyInfo p {
-  margin-bottom: 134px; }
+  margin-bottom: 134px;
+  text-align: center; }
 
 .siteDeveloper {
   display: -webkit-box;
@@ -292,7 +305,7 @@ header .headerNavigation {
   justify-content: space-between;
   padding-bottom: 98px; }
 
-.popularProductsGallery > div {
+.productWrapper {
   width: 17.94%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,8 +503,19 @@ header .headerNavigation {
   margin-bottom: 30px; }
 
 .playIcon {
-  width: 100px;
-  margin-bottom: 51px; }
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 51px;
+  background-color: #f07f84;
+  border: 10px solid rgba(255, 154, 158, 0.3); }
+
+.playIcon i {
+  margin: auto;
+  color: #FFFFFF; }
 
 .customerReviews h2 {
   margin-bottom: 21px;
@@ -543,13 +567,18 @@ header .headerNavigation {
 .newsletter p {
   margin-bottom: 72px; }
 
+.emailSubmission input {
+  border: none; }
+
 .emailSubmission {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-bottom: 1px solid #888890;
+  padding-bottom: 5px; }
 
 .ourSponsors {
   display: -webkit-box;
@@ -681,6 +710,102 @@ footer h2 {
 .paymentMethods img {
   width: 35px; }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto; }
+  .landingGallery {
+    padding-top: 75px; }
+  .landingGallery h2,
+  .landingGallery h1,
+  .landingGallery a {
+    margin-bottom: 75px; }
+  .companyInfo {
+    padding-top: 50px; }
+  .companyInfo h1 {
+    margin-bottom: 75px; }
+  .companyInfo p {
+    margin-bottom: 50px; }
+  .productWrapper > p {
+    min-height: 50px; }
+  .popularProductsGallery > div > p {
+    margin-bottom: 0; }
+  .popularProductsIntro {
+    padding-top: 50px; }
+  .popularProductsIntro h2 {
+    margin-bottom: 50px; }
+  .ourBlog {
+    padding-top: 50px; }
+  .ourBlog h2 {
+    margin-bottom: 50px; }
+  .ourSponsors {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey; }
+  .sponsor {
+    width: 18%; }
+  footer .wrapper {
+    padding-top: 25px; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 750px;
+    margin: 0 auto; }
+  .navWrapper {
+    width: 75%; }
+  .navWrapper ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  header ul li {
+    margin: 0px; }
+  .allProducts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .airPlants,
+  .plantContainers {
+    width: 75%;
+    min-height: 260px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .plantContainers {
+    margin: 0 auto; }
+  .airPlants,
+  .topOfContainers {
+    margin-bottom: 15px; }
+  .rightOfAir,
+  .topOfContainers {
+    width: 100%; }
+  .officePlants,
+  .housePlants {
+    width: 49%;
+    background-position: center;
+    background-size: cover; }
+  .productWrapper {
+    width: 33%; }
+  .product {
+    background-position: center;
+    background-size: cover; }
+  .popularProductsGallery :last-child {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center; } }
+
 ul {
   list-style: none; }
 
@@ -807,3 +932,6 @@ footer h2 {
   font-size: .8125rem;
   font-weight: 400;
   color: #888890; }
+
+.contactInfo h3 {
+  font-size: 1rem; }
